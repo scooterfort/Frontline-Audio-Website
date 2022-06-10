@@ -83,7 +83,7 @@ select {
 
 html, body {
     overflow-x: hidden;
-    
+
 }
 
 
@@ -636,4 +636,5 @@ nav {
         padding: 10px;
         width: 100%;
     }
+}
 }
