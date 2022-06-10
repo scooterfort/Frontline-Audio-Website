@@ -81,9 +81,10 @@ select {
 /* Navbar                                                   */
 /* -------------------------------------------------------- */
 
-html, body {
-    overflow-x: hidden;
 
+
+.site-wrapper {
+    overflow-x: hidden;
 }
 
 
