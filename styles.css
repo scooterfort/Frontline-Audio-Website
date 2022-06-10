@@ -81,6 +81,11 @@ select {
 /* Navbar                                                   */
 /* -------------------------------------------------------- */
 
+html, body {
+    overflow-x: hidden;
+}
+
+
 nav {
     display: flex;
     justify-content: space-evenly;
