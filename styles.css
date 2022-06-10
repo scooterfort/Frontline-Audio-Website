@@ -141,7 +141,7 @@ nav {
 
 /* mobile size */
 @media screen and (max-width: 700px){
-    body {
+    html, body {
         overflow-x: hidden;
     }
     .nav-links {
@@ -218,6 +218,46 @@ nav {
 
 
 
+
+/*-------------------*/
+/* WORK SECTION      */
+/*-------------------*/
+
+
+.work {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0f14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-text h1 {
+    font-size: 4rem;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-family: 'Kanit', sans-serif;
+    background: #F7CF45;  
+    background: -webkit-linear-gradient(to right, #F7CF45 #977834);  
+    background-image: linear-gradient(to right, #F7CF45, #977834);    
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.iframe-container{
+
+
+  }
+  
+
+
+
+
+
 /*-------------------*/
 /* ABOUT SECTION     */
 /*-------------------*/
@@ -235,7 +275,7 @@ nav {
     align-items: center;
 }
 
-.about .content img {
+.about .about-content img {
     position: relative;
     z-index: 1;
     height: auto;
@@ -245,13 +285,13 @@ nav {
     margin-bottom: 85px;
 }
 
-.text {
+.about-text {
     width: 550px;
     max-width: 100%;
     padding: 0 10px;
 }
 
-.content {
+.about-content {
     width: 1280px;
     max-width: 95%;
     margin: 0 auto;
@@ -261,7 +301,7 @@ nav {
     justify-content: space-around;
 }
 
-.text h1 {
+.about-text h1 {
     font-size: 4rem;
     margin-bottom: 25px;
     text-transform: capitalize;
@@ -276,7 +316,7 @@ nav {
     -moz-text-fill-color: transparent;
 }
 
-.text h5 {
+.about-text h5 {
     color: #fff;
     font-size: 1.5rem;
     font-family: 'Kanit', sans-serif;
@@ -285,7 +325,7 @@ nav {
     letter-spacing: 1px;
 }
 
-.text p {
+.about-text p {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 1rem;
@@ -295,7 +335,7 @@ nav {
 }
 
 
-.text button {
+.about-text button {
     position: relative;
     font-family: 'Poppins', sans-serif;
     background: #F7CF45;  
@@ -310,7 +350,7 @@ nav {
 
 
 
-.text button:hover {
+.about-text button:hover {
     color: #cb356b;
     background-color: transparent;
     border: solid #cb356b ;
@@ -325,7 +365,7 @@ nav {
         padding: 70px 0px;
     }
 
-    .about .content img {
+    .about .about-content img {
         width: 50%;
         height: auto;
     } 
@@ -334,7 +374,7 @@ nav {
 
 
 @media screen and (max-width: 1172px) {
-    .about .content img {
+    .about .about-content img {
         margin-bottom: 5px;
         max-width: 40%;
     }
@@ -343,7 +383,7 @@ nav {
 
 
 @media screen and (max-width: 650px) {
-    .about .content img {
+    .about .about-content img {
         margin-bottom: 10px;
 }
 
