@@ -401,146 +401,34 @@ nav {
 @media screen and (max-width: 650px) {
     .about .about-content img {
         margin-bottom: 10px;
-}
-
-
-
-
-
-/*
-#about {
-    background: var(--black);
-    display: flex;
-    flex-wrap: wrap;
-    border: solid green; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-
-}
-
-#about h1{
-    font-family: 'Kanit', sans-serif;
-    font-size: 4rem;
-    padding: 25px;
-    text-align: center;
-    background: #f12711;  
-    background: -webkit-linear-gradient(to right, #cb356b, #bd3f32);  
-    background-image: linear-gradient(to right, #cb356b, #bd3f32);    
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-#about h2{
-
-    font-family: 'Kanit', sans-serif;
-    font-size: 2rem;
-    padding: 5px;
-    text-align: center;
-    color: #fff;
-
-}
-
-#about p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    color: #fff;
-}
-
-.about-text {
-    text-align: left;
-}
-
-#headshot-image {
-    filter: drop-shadow(0px 0px 10px black);
-}
-
-.about-img {
-    width: 80%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    border: solid blue;
-}
-
-.about-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 100%;
-    max-width: 1500px;
-    padding: 0 50px;
-    border: solid red; 
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 1050px) {
-    .about-box {
-        display: flex;
-        flex-direction: column-reverse;
-    } 
-}
-
-@media screen and (max-width: 700px) {
-    .about-box {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    #about h1{
-        font-size: 4rem;
-        text-align: left;
-    }
-
-    #about p{
-        font-size: 0.8rem;
-    }
-    
-} 
-
-*/
-
-
-
-
-/* mobile responsiveness */
-
-
-
-
-/* Services Section */
-
-@media screen and (max-width: 1300px) {
-    .services__wrapper {
-        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .services__wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* footer css */
+/*-------------------*/
+/* FOOTER SECTION    */
+/*-------------------*/
 
 
 .footer__container {
-    background-color: #131313;
+    background-color: var(--dark-blue);
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins", sans-serif;
 }
 
-#footer__logo {
+#footerLogoFrontline {
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#footerLogoAudio {
     color: #fff;
     display: flex;
     align-items: center;
@@ -549,43 +437,8 @@ nav {
     font-size: 2rem;
 }
 
-.footer__links {
-    width: 100%;
-    max-width: 1000;
-    display: flex;
-    justify-content: center;
-}
 
-.footer__link--wrapper {
-    display: flex;
-}
 
-.footer__link--items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
-}
-
-.footer__link--items h2 {
-    margin-bottom: 16px;
-    color: #fff;
-}
-
-.footer__link--items a {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-    transition: 0.3 ease-out;
-}
-
-.footer__link--items a:hover {
-    color: #aeaeae;
-    transition: 0.3 ease-out;
-}
 
 .social__icon--link {
     color: #fff;
@@ -593,7 +446,6 @@ nav {
 }
 
 .social__media {
-    max-width: 1000px;
     width: 100%;
 }
 
@@ -602,7 +454,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 1000px;
+    max-width: 60%;
     margin: 40px auto 0 auto;
 }
 
@@ -622,7 +474,10 @@ nav {
         padding-top: 2rem;
     }
 
-    #footer__logo {
+
+
+    
+    #footerLogoAudio {
         margin-bottom: 2rem;
     }
 
@@ -646,5 +501,4 @@ nav {
         padding: 10px;
         width: 100%;
     }
-}
 }
