@@ -515,3 +515,78 @@ nav {
 @media screen and (max-width: 480px) {
 
 }
+
+
+
+
+
+/*---------------------------*/
+/* THANKS SUBMIT SECTION     */
+/*---------------------------*/
+
+.thanks {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0f14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+.thanks-text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.thanks-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.thanks-text h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-family: 'Kanit', sans-serif;
+    background: #F7CF45;  
+    background: -webkit-linear-gradient(to right, #F7CF45 #977834);  
+    background-image: linear-gradient(to right, #F7CF45, #977834);    
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.thanks-text p {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+
+
+
+@media screen and (max-width: 1240px) {
+
+    .thanks {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+
+}
