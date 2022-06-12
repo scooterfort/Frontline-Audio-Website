@@ -46,6 +46,7 @@ picture {
 body {
     line-height: 1.5;
     min-height: 100vh;
+
 }
 
 /* make images easier to work with */
@@ -82,8 +83,9 @@ select {
 /* -------------------------------------------------------- */
 
 
-
+/* make it so you can't scroll horizontally */
 .siteWrapper {
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -146,6 +148,7 @@ nav {
  @media screen and (max-width: 1024px){
         .nav-links {
             width: 60%;
+
         }
 } 
 
