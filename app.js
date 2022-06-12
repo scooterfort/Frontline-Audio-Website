@@ -1,3 +1,12 @@
+const parallax = document.getElementById("parallax");
+
+window.addEventListener("scroll", function () {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * 0.5 + "px";
+})
+
+
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -25,8 +34,9 @@ const navSlide = () => {
 }
 
 
-
 navSlide();
+
+
 
 
 
