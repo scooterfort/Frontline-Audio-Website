@@ -1,12 +1,44 @@
+// //SMOOTH SCROLL
+// const body = document.body,
+// scrollWrap = document.getElementsByClassName("siteWrapper")[0],
+// height = scrollWrap.getBoundingClientRect().height - 1,
+// speed = 0.05;
+
+// var offset = 0;
+
+// body.style.height = Math.floor(height) + "px";
+
+// function smoothScroll() {
+// offset += (window.pageYOffset - offset) * speed;
+
+// var scroll = "translateY(-" + offset + "px) translateZ(0)";
+// scrollWrap.style.transform = scroll;
+
+// callScroll = requestAnimationFrame(smoothScroll);
+// }
+
+// smoothScroll();
+// // SMOOTH SCROLL END
+
+
+
+
+//smooth scroll 2
+
+//smooth scroll end
+
+
+//PARALLAX
 const parallax = document.getElementById("parallax");
 
 window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset * 0.5 + "px";
+    parallax.style.backgroundPositionY = offset * 0.6 + "px";
 })
+//PARALLAX END
 
 
-
+// NAV BAR
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -33,8 +65,9 @@ const navSlide = () => {
     });
 }
 
-
 navSlide();
+
+//NAV BAR END
 
 
 
