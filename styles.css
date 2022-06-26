@@ -4,7 +4,7 @@
     --black: #0A0A0A;
     --grey: #151515;
     --light-grey: #2c2c2c;
-    --gold: #f7cf45; 
+    --gold: #f7cf45;
     --dark-blue: #0d0f14;
     --pink: #cb356b;
 }
@@ -67,17 +67,22 @@ select {
 
 /* remove animations for people who've turned them off */
 
-@media (prefers-reduced-motion: reduce) {  
+@media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
 
 /* make it so you can't scroll horizontally */
 .siteWrapper {
@@ -97,21 +102,21 @@ select {
 
 
 
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     background-color: var(--dark-blue);
     border-left: solid 1px rgba(255, 255, 255, 0.198);
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.198);
     border-radius: 20px;
     border: 4px solid transparent;
     background-clip: content-box;
-  }
+}
 
-  ::-webkit-scrollbar-thumb:hover  {
+::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.403);
-  }
+}
 
 
 
@@ -176,15 +181,15 @@ nav {
 
 
 /* ipad size */
- @media screen and (max-width: 1024px){
-        .nav-links {
-            width: 60%;
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
 
-        }
-} 
+    }
+}
 
 /* mobile size */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
 
     .nav-links {
         position: absolute;
@@ -198,19 +203,20 @@ nav {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         border: solid 3px var(--pink);
-        
+
     }
+
     .nav-links li {
-         opacity: 0;
-         width: 90%;
-        }
+        opacity: 0;
+        width: 90%;
+    }
 
     .burger {
         display: block;
         cursor: pointer;
     }
 
-} 
+}
 
 
 .nav-active {
@@ -218,26 +224,26 @@ nav {
 }
 
 @keyframes navLinkFade {
-    from{
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.toggle .line1{
+.toggle .line1 {
     transform: translateY(+8px) rotate(+45deg);
 }
 
-.toggle .line2{
+.toggle .line2 {
     opacity: 0;
 }
 
-.toggle .line3{
+.toggle .line3 {
     transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -268,8 +274,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around; 
-} 
+    justify-content: space-around;
+}
 
 .hero-text h1 {
     font-size: 6rem;
@@ -301,7 +307,7 @@ nav {
 .hero-text button {
     position: relative;
     font-family: 'Poppins', sans-serif;
-    background: #F7CF45;  
+    background: #F7CF45;
     color: var(--dark-blue);
     text-decoration: none;
     padding: 10px 30px;
@@ -316,21 +322,20 @@ nav {
 .hero-text button:hover {
     color: #cb356b;
     background-color: transparent;
-    border: solid #cb356b ;
+    border: solid #cb356b;
     cursor: pointer;
 }
 
 
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1240px) {}
 
-}
 @media screen and (max-width: 1172px) {
     .hero-text h1 {
         font-size: 5rem;
         margin-bottom: 20px;
     }
-    
+
     .hero-text span {
         font-size: 5rem;
         margin-bottom: 20px;
@@ -348,7 +353,7 @@ nav {
         font-size: 5rem;
         margin-bottom: 20px;
     }
-    
+
     .hero-text span {
         font-size: 5rem;
         margin-bottom: 20px;
@@ -376,7 +381,7 @@ nav {
     margin: 0 auto;
     height: 90%;
     text-align: center;
-    padding: 30px; 
+    padding: 30px;
 }
 
 .work-text {
@@ -407,9 +412,9 @@ nav {
     margin-bottom: 25px;
     text-transform: capitalize;
     font-family: 'Kanit', sans-serif;
-    background: #F7CF45;  
-    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);  
-    background-image: linear-gradient(to bottom, #F7CF45, #977834);    
+    background: #F7CF45;
+    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);
+    background-image: linear-gradient(to bottom, #F7CF45, #977834);
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -464,9 +469,9 @@ nav {
     margin-bottom: 25px;
     text-transform: capitalize;
     font-family: 'Kanit', sans-serif;
-    background: #F7CF45;  
-    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);  
-    background-image: linear-gradient(to bottom, #F7CF45, #977834);    
+    background: #F7CF45;
+    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);
+    background-image: linear-gradient(to bottom, #F7CF45, #977834);
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -497,7 +502,7 @@ nav {
 .about-text button {
     position: relative;
     font-family: 'Poppins', sans-serif;
-    background: #F7CF45;  
+    background: #F7CF45;
     color: var(--dark-blue);
     text-decoration: none;
     padding: 10px 30px;
@@ -512,7 +517,7 @@ nav {
 .about-text button:hover {
     color: #cb356b;
     background-color: transparent;
-    border: solid #cb356b ;
+    border: solid #cb356b;
     cursor: pointer;
 }
 
@@ -527,7 +532,7 @@ nav {
     .about .about-content img {
         width: 50%;
         height: auto;
-    } 
+    }
 
     .work iframe {
         width: 500px;
@@ -604,7 +609,8 @@ button:focus {
     border: 0;
 }
 
-.form-input, .form-button {
+.form-input,
+.form-button {
     font-family: inherit;
     text-transform: uppercase;
     font-size: 20px;
@@ -665,9 +671,9 @@ button:focus {
     margin-bottom: 35px;
     text-transform: capitalize;
     font-family: 'Kanit', sans-serif;
-    background: #F7CF45;  
-    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);  
-    background-image: linear-gradient(to bottom, #F7CF45, #977834);    
+    background: #F7CF45;
+    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);
+    background-image: linear-gradient(to bottom, #F7CF45, #977834);
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -684,14 +690,14 @@ button:focus {
     font-size: 1.5rem;
     border: solid transparent;
     transition: all 0.3s ease;
-    
+
 
 }
 
 .form-button:hover {
     color: #cb356b;
     background-color: transparent;
-    border: solid #cb356b ;
+    border: solid #cb356b;
     cursor: pointer;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -715,9 +721,9 @@ button:focus {
 }
 
 #footerLogoFrontline {
-    background: #F7CF45;  
-    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);  
-    background-image: linear-gradient(to bottom, #F7CF45, #977834);    
+    background: #F7CF45;
+    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);
+    background-image: linear-gradient(to bottom, #F7CF45, #977834);
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -732,9 +738,9 @@ button:focus {
 }
 
 #footerLogoAudio {
-    background: #fff;  
-    background: -webkit-linear-gradient(to top, #fff rgb(31, 31, 31));  
-    background-image: linear-gradient(to top, #fff, rgb(171, 171, 171));    
+    background: #fff;
+    background: -webkit-linear-gradient(to top, #fff rgb(31, 31, 31));
+    background-image: linear-gradient(to top, #fff, rgb(171, 171, 171));
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -756,7 +762,6 @@ button:focus {
 
 .social__icon--link:hover {
     color: var(--gold);
-
 }
 
 .social__media {
@@ -772,7 +777,7 @@ button:focus {
     margin: 40px auto 0 auto;
 }
 
-.social__icons  {
+.social__icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -805,9 +810,7 @@ button:focus {
 
 }
 
-@media screen and (max-width: 480px) {
-
-}
+@media screen and (max-width: 480px) {}
 
 
 
@@ -851,9 +854,9 @@ button:focus {
     margin-bottom: 25px;
     text-transform: capitalize;
     font-family: 'Kanit', sans-serif;
-    background: #F7CF45;  
-    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);  
-    background-image: linear-gradient(to bottom, #F7CF45, #977834);    
+    background: #F7CF45;
+    background: -webkit-linear-gradient(to bottom, #F7CF45 #977834);
+    background-image: linear-gradient(to bottom, #F7CF45, #977834);
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
